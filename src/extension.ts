@@ -82,7 +82,7 @@ export function activate(context: vscode.ExtensionContext) {
             return; // No open text editor
         }
 
-        const selections: vscode.Selection[] = editor.selections;
+        const selections: vscode.Selection[] = [...editor.selections];
 
         editor.edit(builder => {
             for (const selection of selections) {
