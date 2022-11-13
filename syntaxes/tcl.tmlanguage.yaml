@@ -2899,7 +2899,7 @@ repository:
     patterns:
       -
         begin: '(?<=^|\[|{|;)\s*(::)?\b(regexp|regsub)\b'
-        end: "(?=(?<!\\\\)(?:$|[\n;}\\]]))"
+        end: "(?=(?<!\\\\)(?:$|.*[\n;}\\]]))"
         beginCaptures:
           '1':
             name: support.type.ns.separator.tcl
