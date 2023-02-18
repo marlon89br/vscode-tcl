@@ -29,7 +29,7 @@ uninstall:
 package: $(VSIX)
 
 $(VSIX): syntax
-	vsce package
+	npx vsce package
 
 vsix: $(VSIX)
 
