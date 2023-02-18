@@ -727,7 +727,7 @@ repository:
   tcl-proc:
     patterns:
       -
-        begin: "(?<=^|[\\[{;])\\s*(::)?\\b(proc)\\b\\s+([^\\s\n]+)\\s+(?={|\\b|\\[|\\\\$)"
+        begin: "(?<=^|[\\[{;])\\s*(::)?\\b(proc)\\b\\s+([^\\s\n]+)\\s+(?={|\\b|\\[|\"|\\\\$)"
         end: '(?=(?<!\\)$)'
         beginCaptures:
           '1':
@@ -743,6 +743,8 @@ repository:
               -
                 include: '#namespace-name'
         patterns:
+          -
+            include: '#quoted-string'
           -
             include: '#proc-arguments'
           -
