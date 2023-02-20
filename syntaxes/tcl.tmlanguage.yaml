@@ -2806,12 +2806,14 @@ repository:
         name: string.quoted.tcl
       -
         begin: '\s*+(?<!\\)(")'
-        end: '(?<!\\)(")'
+        end: '(?<!\\)((?:\\{2})*)(")'
         beginCaptures:
           '1':
             name: string.quoted.double.open.tcl
         endCaptures:
           '1':
+            name: constant.character.escape
+          '2':
             name: string.quoted.double.close.tcl
         patterns:
           -
