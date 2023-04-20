@@ -62,7 +62,7 @@ repository:
     patterns:
       -
         begin: '\s*+(?<!\\)(\[)'
-        end: '(?<!\\)(\])'
+        end: '(?:(?<!\\)|(?<=\\{2}))(\])'
         beginCaptures:
           '1':
             name: meta.brace.square.open.tcl
