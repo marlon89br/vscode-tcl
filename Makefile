@@ -1,8 +1,8 @@
-BASENAME?=tcl
+BASENAME?=tclexp
 NAME?=$(BASENAME)
 VERSION?=$(shell jq -r .version package.json)
 VSIX?=$(BASENAME)-$(VERSION).vsix
-PKG_ID?=bitwisecook.$(BASENAME)
+PKG_ID?=mlorencetti.$(BASENAME)
 
 .DEFAULT_GOAL := vsix
 
