@@ -2,12 +2,12 @@
     "name": "tclexp",
     "displayName": "Tcl",
     "description": "Tcl language support",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "keywords": [
         "tcl",
         "tk"
     ],
-    "publisher": "bitwisecook",
+    "publisher": "mlorencetti",
     "bugs": {
         "url": "https://github.com/bitwisecook/tcl.git/LICENSE"
     },
